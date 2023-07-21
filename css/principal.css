@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/*------------------------------------------------------------------------------*/
+/*1ER FORMATO DE TABLA*/
+/*------------------------------------------------------------------------------*/
+.tabla {
+  width: 70%;
+  /*font-family: 'Roboto Condensed', sans-serif;*/
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  margin: 5% 0;
+  border-spacing: 0px !important;
+}
+
+.columOne {
+  width: 50%;
+  padding: 3px 12px;
+}
+
+.columTwo {
+  width: 20%;
+}
+
+.columThree {
+  width: 30%;
+}
+
+.columFour {
+  width: 25%;
+}
+
+.colum{
+  padding: 12px 35px;
+  border-color: #CDCDCD;
+}
+
+.columCabezera{
+  background-color: #CDCDCD;
+  color: #555;
+  font-size: 15px !important;
+  padding: 15px;
+}
+
+.rowOne:hover{
+  background-color: #CDCDCD;
+}
+
+/*------------------------------------------------------------------------------*/
+/*2DO FORMATO DE TABLA*/
+/*------------------------------------------------------------------------------*/
+.tablaModal {
+  width: 95%;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px !important;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  border-spacing: 15px 5px !important;
+}
+
+.emptyColum{
+  border-radius: 7px;
+  border: 1px solid #00000091;
+  padding: 3px 9px;
+  background-color: #ffffff86 !important;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*3ER FORMATO DE TABLA*/
+/*------------------------------------------------------------------------------*/
+.tablaTwo {
+  width: 95%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px !important;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  border-spacing: 15px 5px !important;
+}
+
+.tablaDetalles {
+  width: 95%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px !important;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  border-spacing: 0px !important;
+}
+
+.emptyColumTwo{
+  padding: 3px 0px;
+  background-color: #ffffff86 !important;
+}
+
+.inputTexto{
+  width: 85%;
+  height: 34px;
+  padding: 0px 12px;
+  font-size: 14px;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+/*------------------------------------------------------------------------------*/
+/*4TO FORMATO DE TABLA*/
+/*------------------------------------------------------------------------------*/
+.tablaModal-Pequeño{
+  width: 95%;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px !important;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  border-spacing: 15px 5px !important;
+}
+
+.emptyColum-Pequeño{
+  border-radius: 7px;
+  border: 1px solid #00000091;
+  padding: 3px 9px;
+  background-color: #ffffff86 !important;
+}
+
+.modal-content-Pequeño{
+  background-color: #ffffffef !important;
+  border-radius: 15px !important;
+  width: 35%;
+  padding: 15px;
+}
+/*------------------------------------------------------------------------------*/
+/*FORMATO DE BOTONES*/
+/*------------------------------------------------------------------------------*/
+.btnGroup {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnNormal{
+  margin: 8px;
+  /*font-family: 'Roboto Condensed', sans-serif;*/
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  border-radius: 3px;
+  color: #fff;
+  border-color: transparent;
+  padding: 5px 8px;
+}
+
+.btnCircular{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  border-radius: 30px;
+  color: #fff;
+  border-color: transparent;
+  left: 90%;
+  position: relative;
+}
+
+.btnInfo{
+  background-color: #57585e;
+}
+.btnInfo:hover{
+  background-color: #666666;
+}
+
+.btnEdit{
+  background-color: #2D45FF;
+}
+.btnEdit:hover{
+  background-color: #445aff;
+}
+
+.btnDelete{
+  background-color: rgb(240, 37, 37);
+}
+.btnDelete:hover{
+  background-color: rgb(242, 61, 61);
+}
+/*------------------------------------------------------------------------------*/
+/*1ER FORMATO MODAL*/
+/*------------------------------------------------------------------------------*/
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: var(--black);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+  background-color: #000000ce;
+}
+
+.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-header{
+  float: right;
+  margin: 10px;
+}
+
+.modal-content{
+  background-color: #ffffffef !important;
+  border-radius: 15px !important;
+  width: 70%;
+  padding: 15px;
+}
+
+.close-modal{
+  background-color: red;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 6px;
+  border-color: transparent;
+}
+
+.close-modal:hover{
+  color: red;
+  background-color: #fff;
+  font-size: 15px;
+  border-radius: 6px;
+}
+
+.colorOne{
+  color: #000;
+  font-size: 13px;
+  text-align: left;
+}
+
+.swal2-popup{
+  font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+/*------------------------------------------------------------------------------*/
+/*ETIQUETAS DE TEXTO*/
+/*------------------------------------------------------------------------------*/
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
